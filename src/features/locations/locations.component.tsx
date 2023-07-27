@@ -4,6 +4,7 @@ import { useGetLocationsQuery } from 'features/locations/locations.endpoints';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { Pagination } from 'features/pagination';
 import { nextLocations, previousLocations } from 'features/locations/locations.slices';
+import LoadContent from 'features/loading/LoadContent';
 
 const LocationsComponent: FC = () => {
   const dispatch = useAppDispatch();
@@ -43,4 +44,4 @@ const LocationsComponent: FC = () => {
   );
 };
 
-export default LocationsComponent;
+export default LoadContent<any>(LocationsComponent);
