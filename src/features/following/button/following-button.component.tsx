@@ -14,7 +14,7 @@ const FollowingButtonComponent: FC<FollowingButtonProps> = ({
 
   return (
     <div className={'following-button'} onClick={() => onToggleFavorite(!isFav)}>
-      <img src={src} />
+      <img alt='estrella anadir favorito' src={src} />
     </div>
   );
 };

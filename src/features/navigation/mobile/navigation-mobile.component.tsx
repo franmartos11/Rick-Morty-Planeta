@@ -14,8 +14,8 @@ const NavMobile: FC<NavMobileProps> = ({t}: NavMobileProps) => {
   return (
     <div className={`container mobile-nav`}>
       <div className={'container'}>
-        <NavLink to="/" className={'nav-link'}>
-          <img className={'logo'} src={'/images/logo-dh.png'} />
+        <NavLink aria-label="Vuelve a la home" to="/" className={'nav-link'}>
+          <img alt='Logo Digital House' className={'logo'} src={'/images/logo-dh.png'} />
         </NavLink>
         <button className={'icon-button'} aria-label="menu-button" onClick={toggle}>
           {isOpen ? <FaTimes /> : <FaBars />}

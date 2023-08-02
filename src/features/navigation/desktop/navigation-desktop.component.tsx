@@ -10,8 +10,8 @@ const NavDesktop: FC<NavMobileProps> = ({t}:NavMobileProps) => {
   return (
     <div className={'container nav'} style={{ justifyContent: 'space-between' }}>
               <div className={'container'} style={{ width: 400 }}>
-                <NavLink to="/" className={'nav-link'}>
-                  <img className={'logo'} src={'/images/logo-dh.png'} />
+                <NavLink aria-label="Vuelve a la home" to="/" className={'nav-link'}>
+                  <img alt='Logo Digital House' className={'logo'} src={'/images/logo-dh.png'} />
                 </NavLink>
         <NavLink to="/" className={'nav-link'}>
           <h3>{t('navigation.home')}</h3>

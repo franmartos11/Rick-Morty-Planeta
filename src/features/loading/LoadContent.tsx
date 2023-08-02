@@ -27,7 +27,7 @@ const LoadContent = <P extends object>(
               } else {
                 setIsLoading(false);
               }
-            }, 2000); // Simulate a 2-second delay for the action
+            }, 0); // Simulate a 2-second delay for the action
           };
       
           if (isLoading) {

@@ -2,12 +2,13 @@ import React from 'react'
 
 interface CardPictureProps{
     imageUrl:string;
+    alt:string;
 }
 
-const CardPicture : React.FC<CardPictureProps>=({imageUrl})=> {
+const CardPicture : React.FC<CardPictureProps>=({imageUrl,alt})=> {
   return (
     <div className={"card-image"}>
-            <img src={imageUrl} />
+            <img alt={alt} src={imageUrl} />
           </div>
   )
 }
