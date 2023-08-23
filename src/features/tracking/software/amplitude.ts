@@ -1,6 +1,6 @@
-import { TrackingSoftware } from 'features/tracking/tracking.types';
+import { InitializingTrackingSoftware} from 'features/tracking/tracking.types';
 
-abstract class AmplitudeTrackingSoftware implements TrackingSoftware {
+abstract class AmplitudeTrackingSoftware implements InitializingTrackingSoftware {
   private initialized = false;
 
   initialize(): void {

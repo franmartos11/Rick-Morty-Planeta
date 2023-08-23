@@ -1,6 +1,6 @@
-import { TrackingSoftware } from 'features/tracking/tracking.types';
+import { InitializingTrackingSoftware } from 'features/tracking/tracking.types';
 
-class FacebookTrackingSoftware implements TrackingSoftware {
+class FacebookTrackingSoftware implements InitializingTrackingSoftware {
   private initialized = false;
 
   initialize(): void {
